@@ -42,11 +42,15 @@ Replace Media Files
 
 Update with your own files:
 
-    SONG1.mp3, SONG2.mp3, SONG3.mp3 
+   SONG1.mp3, SONG2.mp3, SONG3.mp3 
 
 
 Open in Browser
 Open index.html in any modern browser.
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 232358" src="https://github.com/user-attachments/assets/35131ecb-282d-4b58-9e4c-08c50e361c90" />
+
+
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 232505" src="https://github.com/user-attachments/assets/e0b18f0f-c9cd-4d98-9bc8-834086f93b2c" />
+
+
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 232438" src="https://github.com/user-attachments/assets/194212dc-8363-46b9-8d8f-1b036713c492" />
