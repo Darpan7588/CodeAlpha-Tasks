@@ -33,9 +33,9 @@ Users can filter images by category, upload their own images (via URL or file up
 ---
 
 ## 📦 Tech Stack
-HTML – Markup
-CSS – Responsive design and transitions
-JavaScript – Dynamic filtering, lightbox, and theme logic
+ 1. HTMl
+ 2. CSS
+ 3. Javascript
 
 ## Demo- Screenshots:
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 231003" src="https://github.com/user-attachments/assets/2f4bda8d-090b-4fc0-b5c7-114eeda53db5" />
