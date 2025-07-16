@@ -42,7 +42,7 @@ Replace Media Files
 
 Update with your own files:
 
-   SONG1.mp3, SONG2.mp3, SONG3.mp3 
+      SONG1.mp3, SONG2.mp3, SONG3.mp3 
 
 
 Open in Browser
