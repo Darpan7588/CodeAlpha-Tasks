@@ -8,11 +8,11 @@ To get the complete information and run the projects smoothly, please refer to t
 
 For Image Gallery:
 
-    Code Alpha- Image-gallery/README.md
+```Code Alpha- Image-gallery/README.md```
 
 For Music Player- Sunte Jao:
     
-    Code ALpha- Music Player/README.md
+```Code ALpha- Music Player/README.md```
 
 
 ---
