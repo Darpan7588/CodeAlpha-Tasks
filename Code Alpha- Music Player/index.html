@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunte-Jao</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background-color: black;">
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo">
+                <a href="#home"></a>
+            </div>
+        </div>
+        <div class="nav-home">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="nav-search">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search for song"
+            oninput="searchProducts()"
+            class="search-input"
+          />
+          <div class="search_icon">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+        </div>
+      <div class="Block2">
+          <div class="install">
+            <div class="nav-download border">
+          <i class="fa-solid fa-download"></i>
+          </div>
+          <div class="ins">
+            <p>Install App</p>
+          </div>
+        </div>
+        <div class="nav-signin border">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+      <div class="sidebar">
+    <div class="sidebar-top">
+   <div class="library-section">
+        <span class="library-title">Your Library</span>
+        <button class="plus-btn">+</button>
+      </div>
+
+      <div class="card">
+        <h4>Create your first playlist</h4>
+        <p>It's easy, we'll help you</p>
+        <button class="white-btn">Create playlist</button>
+      </div>
+
+    <div class="card">
+        <h4>Let's find some podcasts to follow</h4>
+        <p>We'll keep you updated on new episodes</p>
+        <button class="white-btn">Browse podcasts</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#">Legal</a>
+        <a href="#">Safety & Privacy Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">About Ads</a>
+        <a href="#">Accessibility</a>
+      </div>
+      
+      <button class="lang-btn">🌐 English</button>
+    </div>
+  </div>
+  <div class="song-list" id="songList">
+      <!-- Songs will be injected by JS -->
+    </div>
+  </div>
+
+  <!-- Footer Player -->
+  <footer class="footer-player">
+    <div>
+      <strong id="footerTitle">No song playing</strong><br>
+      <small id="footerArtist"></small>
+    </div>
+    <button id="footerPlayPause">▶</button>
+  </footer>
+
+  <audio id="audioPlayer"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
