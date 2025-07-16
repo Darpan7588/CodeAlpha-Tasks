@@ -89,12 +89,23 @@
 
   <!-- Footer Player -->
   <footer class="footer-player">
-    <div>
-      <strong id="footerTitle">No song playing</strong><br>
-      <small id="footerArtist"></small>
-    </div>
-    <button id="footerPlayPause">▶</button>
-  </footer>
+  <div>
+    <strong id="footerTitle">No song playing</strong><br>
+    <small id="footerArtist"></small>
+  </div>
+
+  <!-- Progress Bar -->
+  <input type="range" id="progressBar" value="0" step="1" />
+
+  <!-- Volume Section -->
+  <div class="volume-wrapper">
+    <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" />
+  </div>
+
+  <!-- Play/Pause Button -->
+  <button id="footerPlayPause">▶</button>
+</footer>
 
   <audio id="audioPlayer"></audio>
   <script src="script.js"></script>
