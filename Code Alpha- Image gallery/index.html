@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌄 Responsive Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+    </div>
+    <div class="form-section">
+      <input type="text" id="img-url" placeholder="Image URL or leave blank to upload file" />
+      <input type="file" id="img-file" accept="image/*" />
+      <select id="img-category">
+        <option value="nature">Nature</option>
+        <option value="city">City</option>
+        <option value="people">People</option>
+        <option value="others">Others</option>
+      </select>
+      <button onclick="addUserImage()">Add Image</button>
+    </div>
+    <!-- Gallery Grid -->
+    <div class="gallery" id="gallery">
+      <!-- Images will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <!-- Lightbox View -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">✖</span>
+    <img id="lightbox-img" src="" />
+    <div class="nav-buttons">
+      <span onclick="prevImage()">⟨ Prev</span>
+      <span onclick="nextImage()">Next ⟩</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
