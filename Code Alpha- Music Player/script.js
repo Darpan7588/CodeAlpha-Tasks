@@ -80,3 +80,35 @@ footerPlayPause.addEventListener("click", () => {
   }
 });
 
+const progressBar = document.getElementById("progressBar");
+const volumeControl = document.getElementById("volumeControl");
+
+// Update progress bar as song plays
+audioPlayer.addEventListener("timeupdate", () => {
+  progressBar.max = audioPlayer.duration;
+  progressBar.value = audioPlayer.currentTime;
+});
+
+// Seek song when progress bar changes
+progressBar.addEventListener("input", () => {
+  audioPlayer.currentTime = progressBar.value;
+});
+
+// Volume control
+volumeControl.addEventListener("input", () => {
+  audioPlayer.volume = volumeControl.value;
+});
+
+const volumeIcon = document.getElementById("volumeIcon");
+
+volumeControl.addEventListener("input", () => {
+  audioPlayer.volume = volumeControl.value;
+
+  if (audioPlayer.volume === 0) {
+    volumeIcon.className = "fa-solid fa-volume-xmark";
+  } else if (audioPlayer.volume < 0.5) {
+    volumeIcon.className = "fa-solid fa-volume-low";
+  } else {
+    volumeIcon.className = "fa-solid fa-volume-high";
+  }
+});
